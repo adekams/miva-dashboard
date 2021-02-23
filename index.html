@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adenike Salau">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <nav class="flex">
+                    <ul class="left flex">
+                        <li class="hamburger">
+                            <i class="fas fa-bars"></i>
+                            <!-- <span class="iconify" data-icon="codicon:three-bars" data-inline="false"></span> -->
+                        </li>
+                        <li class="search">
+                            <input type="text" class="search-input" placeholder="Enter keywords..">
+                            <span class="iconify" id="magnifier" data-icon="simple-line-icons:magnifier" data-inline="false"></span>
+                        </li>
+                    </ul>           
+
+                    <ul class="right flex">                        
+                        <li class="icons">
+                            <span class="iconify" data-icon="cil:envelope-open" data-inline="false"></span>
+                        </li>  
+
+                        <li class="icons notification">
+                            <span class="iconify" data-icon="clarity:notification-outline-badged" data-inline="false"></span>
+                            <span class="notification-alert">10</span>
+                        </li>
+                        <li class="icons">
+                            <span class="iconify" data-icon="twemoji:flag-for-flag-united-kingdom" data-inline="false"></span>
+                        </li>
+
+                        <li class="profile">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7GYmGBL2RNmHe8PpM5w5y5H-j076q9_sZeg&usqp=CAU" alt="Profile photo of an African American Female" class="profile-img">
+                            <!-- <p class="inline" style="writing-mode: vertical-lr; color: #fff; font-size: 20px; margin-left: 10px;">...</p> -->
+                        </li>   
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+
+        <main>
+            <section class="card-wrapper">
+                <div class="container flex">
+                    <div class="card flex" id="card-1">
+                        <div class="card-header">
+                            <p class="card-number">2050</p>
+                            <p class="card-text">Total Orders</p>
+                        </div>
+                        <div class="card-img">
+                            <span class="iconify" data-icon="simple-line-icons:basket-loaded" data-inline="false"></span>
+                        </div>    
+                    </div>
+
+                    <div class="card flex" id="card-2">
+                        <div class="card-header">
+                            <p class="card-number">3250</p>
+                            <p class="card-text">Total Expenses</p>
+                        </div>
+                        <div class="card-img">
+                            <span class="iconify" data-icon="simple-line-icons:wallet" data-inline="false"></span>
+                        </div>    
+                    </div>
+
+                    <div class="card flex" id="card-3">
+                        <div class="card-header">
+                            <p class="card-number">87.5%</p>
+                            <p class="card-text">Total Revenue</p>
+                        </div>
+                        <div class="card-img">
+                            <span class="iconify" data-icon="ion:pie-chart-outline" data-inline="false"></span>
+                        </div>    
+                    </div>
+
+                    <div class="card flex" id="card-4">
+                        <div class="card-header">
+                            <p class="card-number">2550</p>
+                            <p class="card-text">New Users</p>
+                        </div>
+                        <div class="card-img">
+                            <span class="iconify" data-icon="clarity:user-line" data-inline="false"></span>
+                        </div>    
+                    </div>
+                </div>
+            </section>
+
+            <section class="chart">
+                <div class="container flex">
+                <div class="line-wrapper">
+                    <div class="header-top flex">
+                        <span>Product Sales</span>
+                        <span class="dots">...</span>
+                    </div>
+                    <canvas id="lineChart"></canvas>
+                </div>
+
+                <div class="bar-wrapper">
+                    <div class="header-top flex">
+                        <span>Top Selling Categories</span>
+                        <span class="dots">...</span>
+                    </div>
+                    <canvas id="barChart"></canvas>
+                </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <aside>
+        <section class="logo-wrapper">
+            <div class="container">
+            <div class="logo flex">
+                <img src="images/logo.png" alt="">
+                <!-- <i class="fas fa-spinner fa-spin fa-2x"></i> -->
+                <span>BangoDash</span> 
+            </div>
+        </section>
+        <h3 class="main-nav">Main Navigation</h3>
+        </secion>
+        
+        <section class="nav-section">
+            <div class="container">
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-home"></i>
+                        Dashboard
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Dashboard v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Dashboard v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Dashboard v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-briefcase"></i>
+                        UI Elements
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Element v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Element v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Element v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name no-arrow">
+                        <i class="fas fa-clock"></i>
+                        Calender
+                        <span class="box" id="blue">New</span>
+                    </button>
+                </div>
+                  
+                <div class="nav-menu">
+                    <button class="menu-name no-arrow">
+                        <i class="fas fa-envelope"></i>Mailbox
+                        <span class="box" id="yellow">12</span>
+                    </button>
+                    
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-layer-group"></i>
+                        Components
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Components v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Components v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Components v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="far fa-edit"></i>
+                        Forms
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Forms v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Forms v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Forms v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-fire-alt"></i>
+                        UI Icons
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Icons v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Icons v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> UI Icons v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-th-large"></i>
+                        Widgets
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Widgets v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Widgets v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Widgets v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-menu">
+                    <button class="menu-name">
+                        <i class="fas fa-table"></i>
+                        Tables
+                    </button>
+                    <ul class="menu-item">
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Tables v1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Tables v2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-circle"></i> Tables v3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>      
+        </section>
+    </aside>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

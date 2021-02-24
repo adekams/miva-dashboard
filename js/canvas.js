@@ -3,10 +3,13 @@ var ctxB = document.getElementById('barChart').getContext('2d');
 
 var laptopBackground = ctxA.createLinearGradient(0, 0, 0, 200);
 var mobileBackground = ctxA.createLinearGradient(0, 0, 0, 200);
-laptopBackground.addColorStop(0, 'rgba(255, 199, 118, 0.4)');   
-laptopBackground.addColorStop(1, 'rgba(254, 172, 134, 1)');
-mobileBackground.addColorStop(0, 'rgba(218, 67, 163, 0.4)');   
+var watchBackground = ctxA.createLinearGradient(0, 0, 0, 200);
+laptopBackground.addColorStop(0, 'rgba(255, 138,87, 0.6)');   
+laptopBackground.addColorStop(1, 'rgba(255, 138,87, 1)');
+mobileBackground.addColorStop(0, 'rgba(218, 67, 163, 0.6)');   
 mobileBackground.addColorStop(1, 'rgba(175, 83, 179, 1)');
+watchBackground.addColorStop(0, 'rgba(92, 126, 233, 0.6)');   
+watchBackground.addColorStop(1, 'rgba(92, 126, 233, 1)');
 
 
 // bar chart
@@ -25,6 +28,12 @@ var barChart =  new Chart(ctxA, {
                 label: "Mobile",
                 data: [50, 60, 40, 70, 35, 75, 30, 0],
                 backgroundColor: mobileBackground,
+                borderWidth: 0
+            },
+            {
+                label: "Watch",
+                data: [75, 20, 10, 30, 5, 66, 50, 15],
+                backgroundColor: watchBackground,
                 borderWidth: 0
             },
         ]

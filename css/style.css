@@ -107,6 +107,7 @@ header .notification-alert {
     background: rgb(0, 139, 255);
     border-radius: 160%;
     color: #fff;
+    cursor: pointer;
     position: absolute;
     top: -2px;
     left: 6px;

@@ -28,18 +28,12 @@ hamburger.addEventListener('click', (e) => {
     }
 })
 
-
-
 // toggle side nav menu
 buttons.forEach((button) => {
     let currentMenu = button
     currentMenu.addEventListener("click", (e) => {
-         console.log("toggle")
          
         navList.forEach((list) => {
-            // console.log(e.target, list.previousElementSibling)
-            // list.classList.remove("active")
-            // button.classList.remove("btn-down")
             button.classList.toggle("btn-clicked")
             
             if (list.previousElementSibling === e.target) {
